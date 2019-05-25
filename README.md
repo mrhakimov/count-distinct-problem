@@ -13,9 +13,9 @@
 Для проверки базовой функциональности вашего решения можете использовать следующий тест: [https://pastebin.com/ZZjg1MzV](https://pastebin.com/ZZjg1MzV)
 
 ### Описание алгоритма
-Для подсчета приблизительного количества различных чисел использован алгоритм ["Probabilistic Counting"](http://www.cse.unsw.edu.au/~cs9314/07s1/lectures/Lin_CS9314_References/fm85.pdf), найденный мной на ["StackOverFlow"](https://stackoverflow.com/a/35219704). В качестве хэш-функции выбрана ["FNV-1a"](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function#FNV-1a_hash), только с константами для 32-битного целочисленного типа из ["данной статьи"](https://ru.wikipedia.org/wiki/FNV#%D0%9C%D0%BE%D0%B4%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8).
+Для подсчета приблизительного количества различных чисел использован алгоритм [Probabilistic Counting](http://www.cse.unsw.edu.au/~cs9314/07s1/lectures/Lin_CS9314_References/fm85.pdf), найденный мной на [StackOverFlow](https://stackoverflow.com/a/35219704). В качестве хэш-функции выбрана [FNV-1a](https://en.wikipedia.org/wiki/Fowler%E2%80%93Noll%E2%80%93Vo_hash_function#FNV-1a_hash), только с константами для 32-битного целочисленного типа из статьи по [ссылке](https://ru.wikipedia.org/wiki/FNV#%D0%9C%D0%BE%D0%B4%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8).
 
 ### Альтернативы
-1. **Алгоритм LogLog**. Данный алгоритм, судя по комментарию на ["StackOverFlow"](https://stackoverflow.com/a/35219704), требует больше памяти и имеет относительно большую погрешность ошибки.
+1. **Алгоритм LogLog**. Данный алгоритм, судя по комментарию на [StackOverFlow](https://stackoverflow.com/a/35219704), требует больше памяти и имеет относительно большую погрешность ошибки.
 2. **Алгоритм HyperLogLog**. Этот алгоритм хоть и использует меньше памяти, его погрешность ошибки все же больше, чем у приведенного алгоритма.
-3. **Count-min sketch**. Судя по ["статье из Википедии"](https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch) данный алгоритм предполагает, что частоты различных типов не может уменьшаться со временем, то есть является решением лишь частного случая.
+3. **Count-min sketch**. Судя по [статье из Википедии](https://en.wikipedia.org/wiki/Count%E2%80%93min_sketch) данный алгоритм предполагает, что частоты различных типов не может уменьшаться со временем, то есть является решением лишь для частного случая.
