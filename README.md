@@ -1,7 +1,6 @@
 # count-distinct-problem
 
 ### Problem statement in English
----
 Write an algorithm, which counts the number of different numbers in an array approximately, using a constant volume of memory. More formally you need to implement a class with two functions:
 
 - ```void add(int x);``` — add number ```x``` to an array;
@@ -21,9 +20,8 @@ I used [Probabilistic Counting](http://www.cse.unsw.edu.au/~cs9314/07s1/lectures
 2. **Алгоритм LogLog**. This algorithm, according to comment from [StackOverFlow](https://stackoverflow.com/a/35219704) demands more memory and has a relatively large error.
 3. **Алгоритм HyperLogLog**. This algorithm even uses less memory, has bigger error. 
 
-
-### Условие задания на русском
 ---
+### Условие задания на русском
 Необходимо написать алгоритм, который приблизительно подсчитывает количество различных чисел в массиве, используя константный объём памяти.
 Более формально, надо реализовать класс с двумя функциями:
 
